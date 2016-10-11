@@ -1,0 +1,223 @@
+
+@mixin svg-circle($color_1, $color_2) {
+	display: block;
+	height: 180px;
+	width: 180px;
+	margin: 25px auto;
+	border-radius: 100%;
+	position: relative;
+	
+	.svg-cl circle {
+	  stroke-dashoffset: 0;
+	  transition: stroke-dashoffset 1s linear;
+	  stroke: $color_1;
+	  stroke-width: 1em;
+	}
+	.svg-cl #bar {
+	  stroke: $color_2;
+	}
+	&:after {
+	  position: absolute;
+	  display: block;
+	  height: 160px;
+	  width: 160px;
+	  left: 50%;
+	  top: 45%;
+	  box-shadow: none;
+	  text-align: center;
+	  content: attr(data-pct)"%";
+	  margin-top: -80px;
+	  margin-left: -80px;
+	  border-radius: 100%;
+	  line-height: 160px;
+	  font-size: 3.5em;
+	}
+}
+
+.skills-cl {
+	background: #ffffff;
+	padding-bottom: 45px;
+	color: #3c4761;
+	
+	.skills-cl-header {
+		text-align: center;
+		margin-top: 115px;
+		margin-bottom: 80px;
+	
+		.skills-cl-header-title {
+			max-width: 560px;
+			font-size: 39px;
+			font-family: 'TitilliumWebBold';
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: #3c4761;
+			margin: 0 auto;
+			
+			&::after {
+				    display: block;
+					width: 86px;
+					margin: 16px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+			}
+		}
+		
+		p {
+			max-width: 650px;
+			font-size: 18px;
+			color: #3c4761;
+			margin: 0 auto;
+		}
+	}
+	
+	.row {
+		text-align: center;
+		
+		.col {
+			height: 300px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			
+			.skills-cl-img {
+				border: 1px solid black;
+				border-radius: 100px;
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			
+			h4 {
+				font-size: 24px;
+				font-family: 'TitilliumWebBold';
+				text-transform: uppercase;
+				letter-spacing: 0.8px;
+			}
+			
+			span {
+				color : #30bae7;
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			
+			p {
+				font-size: 15px;
+				font-family: 'TitilliumWebLight';
+			}
+			
+			.col-refs {
+				margin-top: 20px;
+			}
+		}
+	}
+/*	
+	#img_A_H {
+		background: url(../img/team/vader.jpg) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}
+	
+	#img_K_U {
+		background: url(../img/team/sidius.jpg) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}
+	
+	#img_O_W {
+		background: rgb(49,52,59) url(../img/team/obi-van.jpg) no-repeat;
+		background-size: cover;
+	    background-position: 9px 0px;
+	}
+	
+	#img_A_G {
+		background: url(../img/team/luke-skywalker.png) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}*/
+	
+	#web-d {
+		@include svg-circle(rgb(69,180,219), rgb(222,231, 235));
+	}
+	
+	#html-c {
+		@include svg-circle(rgb(203,86,128), rgb(222,231, 235));
+	}
+	
+	#ghc-d {
+		@include svg-circle(rgb(59,186,161), rgb(222,231, 235));
+	}
+	
+	#ui_ux {
+		@include svg-circle(rgb(226,126,81), rgb(222,231, 235));
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.skills-cl {
+		.skills-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.skills-cl-header-title {
+				max-width: 400px;
+				font-size: 36px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+	}		
+}
+@media only screen and (max-width: 450px) {
+	.skills-cl {
+		.skills-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.skills-cl-header-title {
+				max-width: 400px;
+				font-size: 36px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+	}
+}

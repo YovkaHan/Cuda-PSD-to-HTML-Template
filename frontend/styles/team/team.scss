@@ -1,0 +1,223 @@
+.team-cl {
+	background: #e7f1f8;
+	padding-bottom: 115px;
+	color: #3c4761;
+	
+	.team-cl-header {
+		text-align: center;
+		margin-top: 115px;
+		margin-bottom: 80px;
+	
+		.team-cl-header-title {
+			max-width: 560px;
+			font-size: 39px;
+			font-family: 'TitilliumWebBold';
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: #3c4761;
+			margin: 0 auto;
+			
+			&::after {
+				    display: block;
+					width: 86px;
+					margin: 16px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+			}
+		}
+		
+		p {
+			max-width: 650px;
+			font-size: 18px;
+			color: #3c4761;
+			margin: 0 auto;
+		}
+	}
+	
+	.row {
+		text-align: center;
+		
+		.col {
+			height: 480px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			
+			.team-cl-img {
+				border: 1px solid black;
+				border-radius: 100px;
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			
+			h4 {
+				font-size: 24px;
+				font-family: 'TitilliumWebBold';
+				text-transform: uppercase;
+				letter-spacing: 0.8px;
+				margin-bottom: 8px;
+			}
+			
+			span {
+				color : #30bae7;
+				display: inline-block;
+				margin-bottom: 15px;
+				font-size: 16px;
+			}
+			
+			p {
+				font-size: 15px;
+				font-family: 'TitilliumWebLight';
+			}
+			
+			.col-refs {
+				margin-top: 20px;
+			}
+		}
+	}
+	
+	#img_A_H {
+		background: url(../img/team/vader.jpg) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}
+	
+	#img_K_U {
+		background: url(../img/team/sidius.jpg) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}
+	
+	#img_O_W {
+		background: rgb(49,52,59) url(../img/team/obi-van.jpg) no-repeat;
+		background-size: cover;
+	    background-position: 9px 0px;
+	}
+	
+	#img_A_G {
+		background: url(../img/team/luke-skywalker.png) no-repeat;
+		background-size: cover;
+	    background-position: -40px 0px;
+	}
+}
+
+.ref-f {
+	background: url(../img/team/Fb-icon.png) no-repeat;
+	padding-bottom: 12px;
+    padding-right: 32px;
+	margin: 0 6px;
+}
+.ref-tw {
+	background: url(../img/team/Twitter-icon.png) no-repeat;
+	padding-bottom: 12px;
+    padding-right: 32px;
+	margin: 0 6px;
+}
+.ref-li {
+	background: url(../img/team/LinkedIn-icon.png) no-repeat;
+	padding-bottom: 12px;
+    padding-right: 32px;
+	margin: 0 6px;
+}
+.ref-m {
+	background: url(../img/team/Mail-icon.png) no-repeat;
+	padding-bottom: 12px;
+    padding-right: 32px;
+	margin: 0 6px;
+}
+
+@media only screen and (max-width: 767px) {
+	.team-cl {
+		.team-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.team-cl-header-title {
+				max-width: 430px;
+				font-size: 32px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+		
+		.team-cl-img {
+			border-radius: 90px !important;
+			width: 180px !important;
+			height: 180px !important;
+		}
+		
+		#img_A_H {
+
+			background-position: -36px 0px  !important;
+		}
+		
+		#img_K_U {
+
+			background-position: -30px 0px  !important;
+		}
+		
+		#img_O_W {
+
+			background-position: 9px 0px  !important;
+		}
+		
+		#img_A_G {
+
+			background-position: -36px 0px  !important;
+		}
+	}		
+}
+@media only screen and (max-width: 450px) {
+	.team-cl {
+		.team-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.team-cl-header-title {
+				max-width: 400px;
+				font-size: 36px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+	}
+}

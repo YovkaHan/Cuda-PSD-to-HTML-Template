@@ -1,0 +1,237 @@
+.portfolio-cl {
+	background: #ffdd99;
+	padding-bottom: 45px;
+	color: #393939;
+	
+	.portfolio-cl-header {
+		text-align: center;
+		margin-top: 115px;
+		margin-bottom: 80px;
+	
+		.portfolio-cl-header-title {
+			max-width: 560px;
+			font-size: 39px;
+			font-family: 'TitilliumWebBold';
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: #393939;
+			margin: 0 auto;
+			
+			&::after {
+				    display: block;
+					width: 86px;
+					margin: 16px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+			}
+		}
+		
+		p {
+			max-width: 550px;
+			font-size: 18px;
+			color: #393939;
+			margin: 0 auto;
+		}
+	}
+	
+	.row {
+		text-align: center;
+		
+		.col {
+			height: 420px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			
+			.portfolio-cl-img {
+				width: 530px;
+				height: 310px;
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			
+			h4 {
+				font-size: 18px;
+				font-family: 'TitilliumWebRegular';
+				text-transform: uppercase;
+				letter-spacing: 0.8px;
+			}
+			
+			span {
+				color : #30bae7;
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			
+			p {
+				font-size: 15px;
+				font-family: 'TitilliumWebLight';
+			}
+			
+			.col-refs {
+				margin-top: 20px;
+			}
+		}
+	}
+	
+	.portfolio-cl-btn {
+			text-align: center;
+			margin-top: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 25px 66px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background: url(../img/portfolio/btn_bg_2.png) repeat-x;
+			display: block;
+			font-family: TitilliumWebSemibold, sans-serif;
+			color: rgb(255,255,255);
+			text-transform: uppercase;
+			font-size: 16px;
+			width: 290px;
+			
+			&:hover {
+				color: #ffdd99;
+				text-decoration: none;
+			}
+		}
+	
+	#img_A_H {
+		background: url(../img/portfolio/present_1.png) no-repeat;
+		background-size: cover;
+	}
+	
+	#img_K_U {
+		background: url(../img/portfolio/present_2.png) no-repeat;
+		background-size: cover;
+	}
+	
+	#img_O_W {
+		background: url(../img/portfolio/present_3.png) no-repeat;
+		background-size: cover;
+	}
+	
+	#img_A_G {
+		background: url(../img/portfolio/present_4.png) no-repeat;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 981px) and (max-width: 1150px) {
+	.portfolio-cl {
+		
+		.row {
+			
+			.col {
+				
+				.portfolio-cl-img {
+					width: 450px;
+					height: 263px;
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+				
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.portfolio-cl {
+		.portfolio-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.portfolio-cl-header-title {
+				max-width: 400px;
+				font-size: 36px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+		
+		.row {
+			text-align: center;
+			
+			.col {
+				height: 246px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				
+				.portfolio-cl-img {
+					width: 280px;
+					height: 163px;
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+				
+			}
+		}
+	}		
+}
+@media only screen and (max-width: 450px) {
+	.portfolio-cl {
+		.portfolio-cl-header {
+			text-align: center;
+			margin-top: 115px;
+			margin-bottom: 80px;
+	
+			.portfolio-cl-header-title {
+				max-width: 400px;
+				font-size: 36px;
+				font-family: 'TitilliumWebBold';
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 0 auto;
+			
+				&::after {
+				    display: block;
+					width: 70px;
+					margin: 20px auto 20px auto;
+					border-top: 4px solid rgba(0,0,0,0.15);
+					content: '';
+				}
+				
+			}
+			
+			p {
+				max-width: 500px;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+		
+		.portfolio-cl-btn {
+			padding: 25px 30px !important;
+			font-size: 16px;
+			width: 280px;
+			
+			&:hover {
+				color: #ffdd99;
+				text-decoration: none;
+			}
+		}
+	}
+}
