@@ -373,7 +373,7 @@
   </section>
     <script>
 		window.onload = function() {
-			if($('html').hasClass('no-svg')) {
+			if($('html').hasClass('no-svg') || (navigator.userAgent.indexOf("Safari") > -1)) {
 				$('.navbar-brand > img').attr('src', './img/welcome/logo-cuda.png');
 				}
 		};
