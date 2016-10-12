@@ -19,7 +19,7 @@ header.header-class {
 			margin-left: auto;
 			
 			.navbar-brand {
-				margin-top: 6px;
+				margin-top: 0;
 				margin-left: 45px;
 				height: auto;
 				padding: 0;
@@ -35,15 +35,15 @@ header.header-class {
 				.navbar-nav {
 					float: right;
 					margin-top: 8px;
-					margin-right: 28px;
+					margin-right: -10px;
 					
 					li {
 						text-transform: uppercase;
-						margin: 0 6px;
+						margin: 0 0px;
 					
 						a {
-							padding: 10px 16px;
-							font-size: 16px;
+							padding: 10px 10px;
+							font-size: 15px;
 							color: rgb(255,255,255);
 							line-height: 14px;
 							border-radius: 3px;
@@ -87,12 +87,19 @@ header.header-class {
 				}	
 			}
 @media only screen and (min-width: 768px) and (max-width: 980px) {
+			.navbar-brand {
+				margin-left: 10px !important;
+			}
 				header.header-class {
 					margin-top: $header_margin_top * 0.72  !important;
 				}
 			}
 @media only screen and (max-width: 767px) {
 				header.header-class {
+					.navbar-brand {
+						margin-left: 0px !important;
+					}
+				
 					margin-top: 37px !important;
 					.navbar-header {
 						margin-left: 0;

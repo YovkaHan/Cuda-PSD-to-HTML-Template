@@ -130,7 +130,10 @@
 		float: right;
 		border-top-left-radius: 70px;
 		border-bottom-right-radius: 70px;
-		background: rgba(2,2,2,0.2);
+		background-color: rgba(2,2,2,0.2);
+		//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+		/* For IE 8*/
+		//-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; 
 		display: block;
 		font-family: TitilliumWebSemibold, sans-serif;
 		color: rgb(255,255,255);
@@ -413,11 +416,6 @@
 			float: right;
 			border-top-left-radius: 70px;
 			border-bottom-right-radius: 70px;
-			background: rgba(2,2,2,0.2);
-			display: block;
-			font-family: TitilliumWebSemibold, sans-serif;
-			color: rgb(255,255,255);
-			text-transform: uppercase;
 			font-size: 8px;
 			width: 170px;
 			
@@ -429,7 +427,8 @@
 				
 			&:hover {
 				color: rgb(135, 80, 156);
-				background: rgba(2,2,2,0.4);
+				background: rgb(2,2,2);
+				opacity: 0.4;
 				text-decoration: none;
 			}
 		}

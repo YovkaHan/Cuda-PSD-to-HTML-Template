@@ -2,12 +2,28 @@ body {
 	font-family: TitilliumWebRegular, sans-serif;
 }
 
+.lt-ie9 .team-cl-img, .testimonials-cl-img, .go-to-graphic-burger {
+		-ms-behavior: url(js/vendor/pie/PIE.htc) !important;
+		filter: alpha(opacity=50);
+	}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 0px;
 	padding-right: 0px;
 	width: 92%
+}
+
+#arrowUp {
+	background: url(../img/body/arrowUp.png) no-repeat;
+	display: inline-block;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 38px;
+    height: 50px;
+	opacity: 0;
 }
 
 @media only screen and (min-width: 1200px) {

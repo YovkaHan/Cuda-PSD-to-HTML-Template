@@ -33,7 +33,7 @@
   </head>
 
   <body>
-  <section class="welcome-cl">
+  <section id="welcome" class="welcome-cl">
     <div id="header-main" class="container">
 		<header class="header-class">
 			<nav class="navbar navbar-default navbar-transparent">
@@ -49,11 +49,12 @@
 					</div>
 					<div id="navbar" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li id="li-1"><a href="#">Home</a></li>
-							<li id="li-2"><a href="#">About</a></li>
-							<li id="li-3"><a href="#">Work</a></li>
-							<li id="li-4"><a href="#">Blog</a></li>
-							<li id="li-5"><a href="#">Contact</a></li>
+							<li><a class="smooth-scr" href="#services">Services</a></li>
+							<li><a class="smooth-scr" href="#team">Team</a></li>
+							<li><a class="smooth-scr" href="#skills">Skills</a></li>
+							<li><a class="smooth-scr" href="#portfolio">Portfolio</a></li>
+							<li><a class="smooth-scr" href="#testimonials">Testimonials</a></li>
+							<li><a class="smooth-scr" href="#get-in-touch">Get in touch</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</div>
@@ -65,7 +66,8 @@
 		</div>
 	</div>
   </section>
-  <section class="services-cl">
+  <a href="#welcome" class="smooth-scr hidden" id="arrowUp"></a>
+  <section id="services" class="services-cl">
 	<div class="container">
 		<header class="services-cl-header">
 			<h2 class="services-cl-header-title">Services we provide</h2>
@@ -104,7 +106,7 @@
 		</div>
 	</div>
   </section>
-  <section class="team-cl">
+  <section id="team" class="team-cl">
 	<div class="container">
 		<header class="team-cl-header">
 			<h2 class="team-cl-header-title">Meet our beautiful team</h2>
@@ -165,7 +167,7 @@
 		</div>
 	</div>
   </section>
-    <section class="skills-cl">
+    <section id="skills" class="skills-cl">
 	<div class="container">
 		<header class="skills-cl-header">
 			<h2 class="skills-cl-header-title">We got skills</h2>
@@ -216,7 +218,7 @@
 		</div>
 	</div>
 	</section>
-    <section class="portfolio-cl">
+    <section id="portfolio" class="portfolio-cl">
 	<div class="container">
 		<header class="portfolio-cl-header">
 			<h2 class="portfolio-cl-header-title">Our portfolio</h2>
@@ -286,7 +288,7 @@
 		</style>
 	</div>
   </section>
-  <section class="testimonials-cl">
+  <section id="testimonials" class="testimonials-cl">
 	<div class="container">
 		<header class="testimonials-cl-header">
 			<h2 class="testimonials-cl-header-title">What people say about us</h2>
@@ -341,7 +343,7 @@
 		</div>
 	</div>
   </section>
-  <section class="get-in-touch-cl">
+  <section id="get-in-touch" class="get-in-touch-cl">
 	<div class="container">
 		<header class="get-in-touch-cl-header">
 			<h2 class="get-in-touch-cl-header-title">Get in touch</h2>
@@ -377,9 +379,8 @@
 				$('.navbar-brand > img').attr('src', './img/welcome/logo-cuda.png');
 				}
 		};
-	
-	var html = document.querySelectorAll('.lt-ie9');
-		if(html.length > 0) {
+		
+		if(document.getElementsByTagName('html')[0].className.indexOf('lt-ie9') >= 0) {
 			document.write('<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"><\/script>')
 			} else {
 			document.write('<script src="./js/vendor/jquery-2.2.4.min.js"><\/script>')
