@@ -31,7 +31,6 @@
 	<script src="./js/vendor/modernizr-custom.js"></script>
    <link href="./css/all.min.css" rel="stylesheet">
   </head>
-
   <body>
   <section id="welcome" class="welcome-cl">
     <div id="header-main" class="container">
@@ -250,41 +249,40 @@
 			</div>
 		</div>
 		<a href="#" class="portfolio-cl-btn">Load more projects</a>
-		<style>
-			
-#svg circle {
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1s linear;
-  stroke: #666;
-  stroke-width: 1em;
-}
-#svg #bar {
-  stroke: #FF9F1E;
-}
-#cont {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 2em auto;
-  border-radius: 100%;
-  position: relative;
-}
-#cont:after {
-  position: absolute;
-  display: block;
-  height: 160px;
-  width: 160px;
-  left: 50%;
-  top: 50%;
-  box-shadow: none;
-  text-align: center;
-  content: attr(data-pct)"%";
-  margin-top: -80px;
-  margin-left: -80px;
-  border-radius: 100%;
-  line-height: 160px;
-  font-size: 3em;
-}
+		<style>		
+			#svg circle {
+			  stroke-dashoffset: 0;
+			  transition: stroke-dashoffset 1s linear;
+			  stroke: #666;
+			  stroke-width: 1em;
+			}
+			#svg #bar {
+			  stroke: #FF9F1E;
+			}
+			#cont {
+			  display: block;
+			  height: 200px;
+			  width: 200px;
+			  margin: 2em auto;
+			  border-radius: 100%;
+			  position: relative;
+			}
+			#cont:after {
+			  position: absolute;
+			  display: block;
+			  height: 160px;
+			  width: 160px;
+			  left: 50%;
+			  top: 50%;
+			  box-shadow: none;
+			  text-align: center;
+			  content: attr(data-pct)"%";
+			  margin-top: -80px;
+			  margin-left: -80px;
+			  border-radius: 100%;
+			  line-height: 160px;
+			  font-size: 3em;
+			}
 		</style>
 	</div>
   </section>
@@ -389,29 +387,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="./js/all.min.js" ></script>
 	<script>
-	var circles = $('.skills-cl').find('.circle');
-	circles.each( function(i, el) {
-		var val = 100-parseInt($(el).find('input').val());
-		var $circle = $(el).find('.svg-cl #bar');
-	  
-		if (isNaN(val)) {
-			val = 100; 
-		}
-		else{
-			var r = $circle.attr('r');
-			var c = Math.PI*(r*2);
-	   
-			if (val < 0) { val = 0;}
-			if (val > 100) { val = 100;}
-		
-			var pct = ((100-val)/100)*c;
-		
-			$circle.css({ strokeDashoffset: -(pct)});
-		
-			$(el).attr('data-pct',-1*(val-100));
-		}
-	});
-		</script>
+		var circles = $('.skills-cl').find('.circle');
+		circles.each( function(i, el) {
+			var val = 100-parseInt($(el).find('input').val());
+			var $circle = $(el).find('.svg-cl #bar');
+		  
+			if (isNaN(val)) {
+				val = 100; 
+			}
+			else{
+				var r = $circle.attr('r');
+				var c = Math.PI*(r*2);
+		   
+				if (val < 0) { val = 0;}
+				if (val > 100) { val = 100;}
+			
+				var pct = ((100-val)/100)*c;
+			
+				$circle.css({ strokeDashoffset: -(pct)});
+			
+				$(el).attr('data-pct',-1*(val-100));
+			}
+		});
+	</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
   </body>
