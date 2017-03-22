@@ -5,20 +5,17 @@
 		if($('html').hasClass('no-placeholder')) {
 			$('input').placeholder();
 		}
-		// scrollTop appears when client scrolls over ".services-cl" position
-		if($(window).scrollTop() > $('.scrollBtn-on').position().top) {
-			if($('#arrowUp').hasClass('hidden')) {
-				$('#arrowUp').removeClass('hidden');
-			}
-		}
 	});
 	$(window).scroll( function() {  // $(window).scroll --IE8
-		if($(document).scrollTop() > $('.services-cl').position().top) {
-			var o_var = (($(document).scrollTop() - $('.services-cl').position().top) / $('.services-cl').position().top).toFixed(1) / 2;
+			// scrollTop appears when client scrolls over ".scrollBtn-on" position and turns it back
+		var pointPosition = $('.scrollBtn-on').position().top;
+		
+		if($(document).scrollTop() > pointPosition) {
+			var opacity = (($(document).scrollTop() - pointPosition) / pointPosition).toFixed(1) / 2;
 			if($('#arrowUp').hasClass('hidden')) {
 				$('#arrowUp').removeClass('hidden');
 			}
-			$('#arrowUp').css('opacity', o_var);
+			$('#arrowUp').css('opacity', opacity);
 		} else {
 			$('#arrowUp').addClass('hidden');
 		}
