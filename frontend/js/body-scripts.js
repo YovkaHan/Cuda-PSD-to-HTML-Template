@@ -1,10 +1,12 @@
 (function($){
 	require('script!../../node_modules/jquery-placeholder/jquery.placeholder.js');
+	
 	$(document).ready( function() { // $(window).ready --IE8
 		if($('html').hasClass('no-placeholder')) {
 			$('input').placeholder();
 		}
-		if($(window).scrollTop() > $('.services-cl').position().top) {
+		// scrollTop appears when client scrolls over ".services-cl" position
+		if($(window).scrollTop() > $('.scrollBtn-on').position().top) {
 			if($('#arrowUp').hasClass('hidden')) {
 				$('#arrowUp').removeClass('hidden');
 			}
